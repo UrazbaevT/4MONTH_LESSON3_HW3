@@ -10,7 +10,7 @@ interface PixaApi {
     fun getImage(
         @Query("key") key: String = "33930577-2776bed645d029e147edf245a",
         @Query("q") pictureWord: String,
-        @Query("per-page") perPage: Int = 3,
+        @Query("per_page") perPage: Int = 3,
         @Query("page") page: Int,
     ): Call<PixaModel>
 }

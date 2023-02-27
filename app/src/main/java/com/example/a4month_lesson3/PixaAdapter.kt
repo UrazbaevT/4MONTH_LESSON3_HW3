@@ -9,6 +9,10 @@ import com.example.a4month_lesson3.databinding.ItemImageBinding
 
 class PixaAdapter(var list: ArrayList<Hit>) : Adapter<PixaAdapter.PixaViewHolder>() {
 
+    fun addData(list:List<Hit>){
+        this.list.addAll(list)
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PixaViewHolder {
         return PixaViewHolder(
             ItemImageBinding.inflate(
